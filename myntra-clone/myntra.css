@@ -1,0 +1,408 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Rubik+Moonrocks&family=Sedgwick+Ave+Display&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-weight: 500;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  /* user-select: none; */
+}
+.main_nav {
+  /* background-color: aqua; */
+  width: 100%;
+  height: 100px;
+  display: flex;
+  background-color: rgba(212, 183, 173, 0.358);
+  /* filter: blur(0.5px); */
+}
+.category > .sale > marquee{
+  background-color: rgba(213, 238, 16, 0.423);
+  animation: sale ease-in 10s infinite;
+}
+.category > .sale {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+@keyframes sale {
+  0%{
+    color: brown;
+  }
+  10%{
+    color: rgb(165, 165, 42);
+  }
+  20%{
+    color: rgb(21, 24, 211);
+  }
+  30%{
+    color: rgb(39, 144, 193);
+  }
+  50%{
+    color: rgb(172, 27, 160);
+  }
+  70%{
+    color: rgb(204, 128, 15);
+  }
+  60%{
+    color: rgb(239, 14, 14);
+  }
+  40%{
+    color: rgb(110, 42, 165);
+  }
+  30%{
+    color: rgb(42, 165, 81);
+  }
+  0%{
+    color: rgb(98, 16, 16);
+  }
+}
+/* ------glittering effect to new arrivals------- */
+.main_nav > .nav_part2 > ul > li > #effect {
+  /* background-color: aqua; */
+  padding: 5px;
+  animation: effect 5s infinite;
+}
+@keyframes effect {
+  0%{
+    color: blue;
+  }
+  20%{
+    color: rgb(55, 197, 143);
+  }
+  30%{
+    color: rgb(173, 230, 18);
+  }
+  40%{
+    color: rgb(3, 200, 26);
+  }
+  70%{
+    color: rgb(255, 0, 81);
+  }
+  60%{
+    color: rgb(25, 108, 216);
+  }
+  50%{
+    color: rgb(197, 39, 211);
+  }
+  0%{
+    color: rgb(34, 214, 163);
+  }
+
+}
+.main_nav > .nav_part1 {
+  /* background-color: bisque; */
+  width: 20%;
+  height: 100px;
+}
+.main_nav > .nav_part2 {
+  /* background-color: rgb(148, 218, 28); */
+  width: 30%;
+  height: 100px;
+}
+.main_nav > .nav_part3 {
+  /* background-color: rgb(32, 147, 193); */
+  width: 25%;
+  height: 100px;
+  /* margin: 5px; */
+}
+.main_nav > .nav_part4 {
+  /* background-color: rgb(167, 29, 87); */
+  width: 25%;
+  height: 100px;
+}
+.main_nav > .nav_part1 > img {
+  height: 100px;
+  width: auto;
+  margin: auto;
+  padding: 5px 5px;
+  justify-content: space-around;
+}
+.main_nav > .nav_part2 > ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 40px;
+  margin: auto;
+}
+.main_nav > .nav_part2 > ul > li,
+a {
+  gap: 5px;
+  color: black;
+  padding: 1px;
+  text-decoration: none;
+  justify-content: space-between;
+}
+.main_nav > .nav_part3 > .search_box > input {
+  display: flex;
+  margin-top: 35px;
+  padding: 5px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 2px;
+}
+.main_nav > .nav_part4 > .icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 35px;
+  justify-content: space-evenly;
+}
+.main_nav > .nav_part4 > .icons > .icon1,
+.icon2,
+.icon3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: medium;
+}
+.container > .category > .heading > h2 {
+  padding: 10px;
+  font-size: 3rem;
+  justify-content: center;
+  opacity: 0.9;
+  color: rgba(195, 29, 201, 0.591);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(95, 158, 160, 0.45);
+  font-family: "Love Ya Like A Sister", cursive;
+  font-weight: 400;
+  font-style: normal;
+  animation: gliter1 5s infinite;
+}
+@keyframes gliter1 {
+  0%{
+    color: blue;
+  }
+  20%{
+    color: rgb(55, 197, 143);
+  }
+  30%{
+    color: rgb(203, 124, 74);
+  }
+  40%{
+    color: rgb(3, 200, 26);
+  }
+  70%{
+    color: rgb(255, 0, 81);
+  }
+  50%{
+    color: rgb(197, 39, 211);
+  }
+  0%{
+    color: rgb(34, 214, 163);
+  }
+
+}
+/* ********* product images css ************ */
+.container > .category > .crowsel_group {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  padding: 10px;
+  background-color: rgba(124, 82, 126, 0.479);
+}
+.container > .category > .crowsel_group1 {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  padding: 10px;
+  background-color: rgba(124, 82, 126, 0.479);
+}
+.container > .category > .crowsel_group > .crowsel_1 {
+  justify-content: center;
+  display: flex;
+  width: 20%;
+  /* background-color: aqua; */
+  height: 100%;
+  /* padding-bottom: 5px; */
+}
+.container > .category > .crowsel_group > .crowsel_1 > img {
+  border-radius: 5px;
+}
+.container > .category > .crowsel_group > .crowsel_1 > p {
+  display: block;
+}
+.container > .category > .crowsel_group > .crowsel_2 {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  /* background-color: rgb(155, 207, 31); */
+  height: 100%;
+}
+.container > .category > .crowsel_group > .crowsel_2 > img {
+  border-radius: 5px;
+}
+.container > .category > .crowsel_group > .crowsel_3 {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  /* background-color: rgb(47, 41, 196); */
+  height: 100%;
+}
+.container > .category > .crowsel_group > .crowsel_3 > img {
+  border-radius: 5px;
+}
+.container > .category > .crowsel_group > .crowsel_4 {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  /* background-color: rgb(195, 44, 195); */
+  height: 100%;
+}
+.container > .category > .crowsel_group > .crowsel_4 > img {
+  border-radius: 5px;
+}
+.container > .category > .crowsel_group > .crowsel_5 {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  /* background-color: rgb(188, 201, 116); */
+  height: 100%;
+  /* padding: 5px; */
+}
+.container > .category > .crowsel_group > .crowsel_5 > img {
+  border-radius: 5px;
+}
+.crowsel_group_names {
+  width: 100%;
+  /* height: 200px; */
+  display: flex;
+  background-color: rgba(185, 27, 193, 0.479);
+}
+/* ********************************************* */
+.container > .category > .crowsel_group1 {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  padding: 10px;
+  background-color: rgba(124, 82, 126, 0.479);
+}
+.container > .category > .crowsel_group1 > .crowsel_6 {
+  justify-content: center;
+  display: flex;
+  width: 20%;
+  /* background-color: aqua; */
+  height: 100%;
+  /* padding-bottom: 5px; */
+}
+.container > .category > .crowsel_group1 > .crowsel_7 {
+  justify-content: center;
+  display: flex;
+  width: 20%;
+  /* background-color: aqua; */
+  height: 100%;
+  /* padding-bottom: 5px; */
+}
+.container > .category > .crowsel_group1 > .crowsel_8 {
+  justify-content: center;
+  display: flex;
+  width: 20%;
+  /* background-color: aqua; */
+  height: 100%;
+  /* padding-bottom: 5px; */
+}
+.container > .category > .crowsel_group1 > .crowsel_9 {
+  justify-content: center;
+  display: flex;
+  width: 20%;
+  /* background-color: aqua; */
+  height: 100%;
+  /* padding-bottom: 5px; */
+}
+.container > .category > .crowsel_group1 > .crowsel_10 {
+  justify-content: center;
+  display: flex;
+  width: 20%;
+  /* background-color: aqua; */
+  height: 100%;
+  /* padding-bottom: 5px; */
+}
+
+
+/* ************Names to crowsel*******************/
+.crowsel_group_names > .name1 {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  padding-left: 10px;
+  /* background-color: rgb(195, 44, 195); */
+}
+.crowsel_group_names > .name2 {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  padding-left: 10px;
+  /* background-color: rgb(195, 44, 195); */
+}
+.crowsel_group_names > .name3 {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  padding-left: 10px;
+  /* background-color: rgb(195, 44, 195); */
+}
+.crowsel_group_names > .name4 {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  /* background-color: rgb(195, 44, 195); */
+}
+.crowsel_group_names > .name5 {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  /* background-color: rgb(195, 44, 195); */
+}
+.crowsel_group_names1 > .name6 {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  /* background-color: rgb(195, 44, 195); */
+}
+.crowsel_group_names1 > .name7 {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  /* background-color: rgb(195, 44, 195); */
+}
+.crowsel_group_names1 > .name8 {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  /* background-color: rgb(195, 44, 195); */
+}
+.crowsel_group_names1 > .name9 {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  /* background-color: rgb(195, 44, 195); */
+}
+.crowsel_group_names1 > .name10 {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  /* background-color: rgb(195, 44, 195); */
+}
+.crowsel_group_names1 {
+  width: 100%;
+  /* height: 200px; */
+  display: flex;
+  background-color: rgba(185, 27, 193, 0.479);
+}
+/* ****************_____end____********************** */
+
+ /* ******----------hover effects---------******** */
+
